@@ -1,0 +1,46 @@
+@import "reset";
+.login{
+	.login_top{
+		margin-top: 50px;
+		margin-left: 50px;
+		img{
+			width: 200px;
+			height: 40px;
+			margin-right: 750px;
+		}
+	}
+	.login_bottom{
+		height: 500px;
+		background: url(../img/logo1.jpg);
+		position: relative;
+		margin-top: 10px;
+		form,div{
+			width: 250px;
+			height: 300px;
+			position: absolute;
+			top: 10px;
+			right: 0;
+			background-color: white;
+			box-sizing: border-box;
+			padding: 20px;
+			span{
+				display: block;
+				color: #999;
+				font-size: 14px;
+			}
+			input{
+				margin-top: 5px;
+				height: 20px;
+			}
+			.loginBtn{
+				width: 60px;
+				height: 30px;
+				margin-left: 50px;
+				margin-top: 10px;
+			}
+		}
+		div{
+			display: none;
+		}
+	}
+}

@@ -1,0 +1,1 @@
+"use strict";window.onload=function(){document.querySelector(".loginBtn").onclick=function(){var s=new XMLHttpRequest;s.open("GET","./js/a.json"),s.send(null);var o=this;s.onload=function(){var n=s.response;0==(n=JSON.parse(n))[0]&&($(o).parent().css({display:"none"}),$(o).parent().siblings().css({display:"block"}))}}};

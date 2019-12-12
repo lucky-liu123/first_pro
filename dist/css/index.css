@@ -1,0 +1,638 @@
+@charset "UTF-8";
+/* CSS Document */
+body, ol, ul, h1, h2, h3, h4, h5, h6, p, th, td, dl, dd, form, fieldset, legend, input, textarea, select, figure, figcaption {
+  margin: 0;
+  padding: 0;
+  /* 清除内外边距 */ }
+
+body, html {
+  font: .12rem "微软雅黑",Arial;
+  /* 设置全局基础字号和字体 */ }
+
+h1, h2, h3, h4, h5, h6, b, strong {
+  font-weight: normal;
+  /* 取消所有加粗 */
+  font-size: 100%;
+  /* 设置字体与父元素字体大小相同 */ }
+
+i, em {
+  font-style: normal;
+  /* 取消倾斜 */ }
+
+li {
+  list-style: none;
+  /* 取消项目符号 */ }
+
+a {
+  color: #666;
+  /* 设置超链接默认颜色 */
+  text-decoration: none;
+  /* 取消下划线 */ }
+
+input {
+  outline: none; }
+
+.clearfix {
+  *zoom: 1; }
+
+.clearfix:after {
+  content: ' ';
+  display: block;
+  height: 0;
+  overflow: hidden;
+  clear: both; }
+
+.container {
+  width: 1196px;
+  margin: 0 auto; }
+
+body, html {
+  height: 100%;
+  background: #f2f2f2; }
+
+#header {
+  width: 100%;
+  height: 32px;
+  background: #333; }
+  #header .header_banner {
+    display: flex;
+    justify-content: space-between; }
+    #header .header_banner .header_banner_left {
+      line-height: 32px;
+      display: flex; }
+      #header .header_banner .header_banner_left a {
+        display: block;
+        color: white;
+        margin-right: 5px; }
+      #header .header_banner .header_banner_left .first {
+        margin-right: 20px; }
+    #header .header_banner ul {
+      display: flex; }
+      #header .header_banner ul a:hover {
+        color: #007AFF; }
+      #header .header_banner ul .work_menu, #header .header_banner ul .help_meun {
+        background: white;
+        display: none;
+        border: 1px solid #999;
+        border-top: none; }
+        #header .header_banner ul .work_menu div, #header .header_banner ul .help_meun div {
+          margin-top: 5px; }
+          #header .header_banner ul .work_menu div a:hover, #header .header_banner ul .help_meun div a:hover {
+            color: #007AFF; }
+          #header .header_banner ul .work_menu div a, #header .header_banner ul .help_meun div a {
+            color: #666;
+            line-height: 20px; }
+      #header .header_banner ul .list4 {
+        display: none; }
+      #header .header_banner ul li {
+        margin: 0 5px; }
+        #header .header_banner ul li a {
+          color: white;
+          display: block;
+          padding: 0 10px;
+          line-height: 32px; }
+
+.fixed_nav {
+  position: fixed;
+  top: 50%;
+  bottom: 50%;
+  right: 0px;
+  z-index: 1001; }
+  .fixed_nav div {
+    width: 40px;
+    height: 35px;
+    border: 1px solid #999;
+    background: white;
+    color: #007AFF;
+    font-size: 24px;
+    text-align: center; }
+    .fixed_nav div i {
+      display: block;
+      width: 20px;
+      height: 20px;
+      margin-left: 8px;
+      margin-top: 3px; }
+      .fixed_nav div i img {
+        width: 100%;
+        height: 100%; }
+  .fixed_nav .backTop {
+    margin-top: 20px;
+    cursor: pointer;
+    line-height: 35px;
+    display: none; }
+
+#nav {
+  background: #FFFFFF; }
+
+.nav_banner {
+  height: 120px;
+  display: flex;
+  justify-content: flex-start; }
+  .nav_banner .nav_banner_center {
+    margin-top: 30px; }
+    .nav_banner .nav_banner_center .text {
+      width: 430px;
+      height: 36px;
+      border: 2px solid #007AFF;
+      padding-left: 12px;
+      color: #777;
+      float: left;
+      border-right: none; }
+    .nav_banner .nav_banner_center .button {
+      float: left;
+      width: 128px;
+      height: 40px;
+      background: #2884c7;
+      line-height: 40px;
+      color: white;
+      font-size: 16px;
+      padding: 0 3px;
+      border: none; }
+    .nav_banner .nav_banner_center p a {
+      color: #007AFF;
+      margin-top: 5px;
+      display: inline-block;
+      margin-right: 5px; }
+  .nav_banner .nav_banner_right {
+    display: flex;
+    justify-content: space-between; }
+    .nav_banner .nav_banner_right .shoppingCat {
+      width: 122px;
+      height: 38px;
+      display: block;
+      border: 1px solid #ddd;
+      margin-top: 30px;
+      margin-left: 25px;
+      position: relative; }
+      .nav_banner .nav_banner_right .shoppingCat:hover {
+        background: #2884c7;
+        color: white; }
+      .nav_banner .nav_banner_right .shoppingCat a {
+        width: 100%;
+        height: 100%;
+        display: inline-block; }
+        .nav_banner .nav_banner_right .shoppingCat a img {
+          width: 20px;
+          height: 20px;
+          position: absolute;
+          top: 10px;
+          left: 50px; }
+    .nav_banner .nav_banner_right .app {
+      display: block;
+      box-sizing: border-box;
+      margin-top: 10px;
+      margin-left: 25px;
+      border: 1px solid #ddd;
+      height: 102px;
+      position: relative;
+      width: 90px;
+      padding: 5px 5px; }
+      .nav_banner .nav_banner_right .app img {
+        width: 75px;
+        height: 75px; }
+      .nav_banner .nav_banner_right .app .close {
+        display: block;
+        width: 14px;
+        height: 14px;
+        background: #ddd;
+        text-align: center;
+        line-height: 14px;
+        position: absolute;
+        top: 0px;
+        left: 89px; }
+
+#lunbo {
+  height: 420px;
+  position: relative; }
+  #lunbo .main_img {
+    position: absolute; }
+    #lunbo .main_img img {
+      width: 100%;
+      height: 100%; }
+  #lunbo .swiper-pagination-bullet {
+    width: 30px;
+    border-radius: 0px; }
+  #lunbo .list {
+    position: absolute;
+    width: 196px;
+    height: 420px;
+    background: rgba(0, 0, 0, 0.7);
+    left: 0px;
+    top: 0px;
+    z-index: 999;
+    box-sizing: border-box;
+    padding: 15px; }
+    #lunbo .list ul li {
+      width: 171px;
+      height: 64px;
+      margin-left: 10px;
+      display: block;
+      line-height: 64px;
+      font-size: 14px;
+      box-sizing: border-box; }
+      #lunbo .list ul li a {
+        color: #FFFFFF; }
+  #lunbo .listtwo {
+    width: 1000px;
+    height: 420px;
+    position: absolute;
+    background: white;
+    z-index: 1000;
+    left: 196px;
+    display: none; }
+    #lunbo .listtwo li {
+      height: 50px;
+      margin-left: 30px; }
+  #lunbo .login {
+    position: absolute;
+    z-index: 999;
+    left: 960px;
+    width: 216px;
+    height: 400px;
+    box-sizing: border-box;
+    background: #FFFFFF;
+    margin: 10px 0; }
+    #lunbo .login .login_top {
+      text-align: center;
+      padding-bottom: 25px;
+      border-bottom: 1px solid #ddd; }
+      #lunbo .login .login_top .yuan {
+        width: 60px;
+        height: 60px;
+        margin: 12px 0 20px; }
+        #lunbo .login .login_top .yuan img {
+          width: 100%;
+          height: 100%;
+          border: 1px solid #ddd;
+          border-radius: 100%;
+          margin-left: 72px;
+          margin-top: 10px; }
+      #lunbo .login .login_top p {
+        color: #999;
+        margin: 2px; }
+      #lunbo .login .login_top input {
+        width: 90px;
+        height: 32px;
+        border-radius: 2px;
+        border: none; }
+      #lunbo .login .login_top .loginBtn {
+        color: #FFFFFF;
+        background: #007AFF; }
+    #lunbo .login .login_bottom p {
+      padding-left: 6px;
+      margin-top: 25px;
+      font-size: 14px;
+      font-weight: bolder; }
+      #lunbo .login .login_bottom p span {
+        color: #999;
+        margin-left: 100px;
+        font-size: 12px; }
+    #lunbo .login .login_bottom ul li {
+      line-height: 20px; }
+
+.img_list_banner {
+  height: 140px;
+  display: flex;
+  justify-content: space-between;
+  margin-top: 10px; }
+  .img_list_banner a {
+    display: block;
+    width: 19%;
+    height: 140px; }
+    .img_list_banner a img {
+      width: 100%;
+      height: 100%; }
+
+.menu_banner {
+  margin-top: 20px; }
+  .menu_banner .menu_banner_top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; }
+    .menu_banner .menu_banner_top div {
+      font-size: 20px;
+      color: #000; }
+      .menu_banner .menu_banner_top div span {
+        font-size: 14px;
+        color: #333; }
+    .menu_banner .menu_banner_top ul {
+      display: flex; }
+      .menu_banner .menu_banner_top ul li {
+        font-size: 14px;
+        margin-right: 10px; }
+  .menu_banner .menu_banner_middle {
+    display: flex; }
+    .menu_banner .menu_banner_middle .menu_middle_left {
+      width: 592px;
+      height: 372px; }
+      .menu_banner .menu_banner_middle .menu_middle_left img {
+        width: 100%;
+        height: 100%; }
+    .menu_banner .menu_banner_middle .menu_middle_right {
+      position: relative;
+      display: flex;
+      background: #FFFFFF;
+      justify-content: space-between; }
+      .menu_banner .menu_banner_middle .menu_middle_right .hot {
+        width: 290px;
+        height: 372px;
+        box-sizing: border-box;
+        text-align: center;
+        box-sizing: border-box; }
+        .menu_banner .menu_banner_middle .menu_middle_right .hot .lianjie {
+          display: flex;
+          margin-left: 70px; }
+          .menu_banner .menu_banner_middle .menu_middle_right .hot .lianjie a {
+            display: block;
+            width: 72px;
+            height: 20px;
+            background: #007AFF;
+            margin-right: 10px;
+            color: white;
+            line-height: 20px;
+            border-radius: 2px;
+            text-align: center; }
+        .menu_banner .menu_banner_middle .menu_middle_right .hot img {
+          width: 230px;
+          height: 230px; }
+        .menu_banner .menu_banner_middle .menu_middle_right .hot h3 {
+          font-size: 14px;
+          color: #000000;
+          font-weight: bolder; }
+        .menu_banner .menu_banner_middle .menu_middle_right .hot p {
+          line-height: 20px;
+          color: #999; }
+        .menu_banner .menu_banner_middle .menu_middle_right .hot .price {
+          font-size: 16px;
+          margin-top: 10px;
+          color: red; }
+        .menu_banner .menu_banner_middle .menu_middle_right .hot .buy {
+          position: absolute;
+          bottom: -30px;
+          left: 80px;
+          display: none; }
+          .menu_banner .menu_banner_middle .menu_middle_right .hot .buy span {
+            display: inline-block;
+            width: 72px;
+            height: 20px;
+            background: red;
+            color: white;
+            line-height: 20px;
+            border-radius: 2px; }
+
+.menu_banner_bottom {
+  position: relative;
+  display: flex;
+  margin-top: 15px;
+  background: #FFFFFF; }
+  .menu_banner_bottom .hot {
+    width: 290px;
+    height: 372px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    text-align: center; }
+    .menu_banner_bottom .hot .lianjie {
+      display: flex;
+      margin-left: 70px; }
+      .menu_banner_bottom .hot .lianjie a {
+        display: block;
+        width: 72px;
+        height: 20px;
+        background: #007AFF;
+        margin-right: 10px;
+        color: white;
+        line-height: 20px;
+        border-radius: 2px;
+        text-align: center; }
+    .menu_banner_bottom .hot img {
+      width: 230px;
+      height: 230px; }
+    .menu_banner_bottom .hot h3 {
+      font-size: 14px;
+      color: #000000;
+      font-weight: bolder; }
+    .menu_banner_bottom .hot p {
+      line-height: 20px;
+      color: #999; }
+    .menu_banner_bottom .hot .price {
+      font-size: 16px;
+      margin-top: 10px;
+      color: red; }
+    .menu_banner_bottom .hot .buy {
+      position: absolute;
+      bottom: -30px;
+      left: 80px;
+      display: none; }
+      .menu_banner_bottom .hot .buy span {
+        display: inline-block;
+        width: 72px;
+        height: 20px;
+        background: red;
+        color: white;
+        line-height: 20px;
+        border-radius: 2px; }
+
+.main_banner {
+  margin-top: 20px; }
+  .main_banner .main_banner_top {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px; }
+    .main_banner .main_banner_top div {
+      font-size: 20px;
+      color: #000; }
+      .main_banner .main_banner_top div span {
+        font-size: 14px;
+        color: #333; }
+    .main_banner .main_banner_top ul {
+      display: flex; }
+      .main_banner .main_banner_top ul li {
+        font-size: 14px;
+        margin-right: 10px; }
+  .main_banner .main_banner_middle {
+    margin-top: 10px;
+    display: flex; }
+    .main_banner .main_banner_middle .main_middle_left {
+      width: 236px;
+      height: 608px; }
+      .main_banner .main_banner_middle .main_middle_left img {
+        width: 100%;
+        height: 100%; }
+    .main_banner .main_banner_middle .main_middle_right {
+      display: flex;
+      flex-wrap: wrap;
+      box-sizing: border-box;
+      justify-content: space-between;
+      width: 960px;
+      margin-left: 12px;
+      text-align: center; }
+      .main_banner .main_banner_middle .main_middle_right div {
+        width: 228px;
+        height: 298px;
+        background: #FFFFFF;
+        margin-bottom: 12px;
+        line-height: 20px;
+        position: relative; }
+        .main_banner .main_banner_middle .main_middle_right div img {
+          width: 160px;
+          height: 160px;
+          margin-top: 20px; }
+        .main_banner .main_banner_middle .main_middle_right div h3 {
+          font-size: 14px;
+          color: #000000;
+          font-weight: bolder;
+          margin-top: 10px; }
+        .main_banner .main_banner_middle .main_middle_right div p {
+          color: #999; }
+        .main_banner .main_banner_middle .main_middle_right div .price1 {
+          color: red;
+          font-size: 14px;
+          margin-top: 10px; }
+        .main_banner .main_banner_middle .main_middle_right div .buyNow {
+          width: 100px;
+          height: 30px;
+          background: red;
+          color: white;
+          line-height: 30px;
+          position: absolute;
+          left: 65px;
+          bottom: -60px;
+          display: none; }
+
+.life_banner .life_banner_top {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 10px; }
+  .life_banner .life_banner_top div {
+    font-size: 20px;
+    color: #000; }
+    .life_banner .life_banner_top div span {
+      font-size: 14px;
+      color: #333; }
+  .life_banner .life_banner_top ul {
+    display: flex; }
+    .life_banner .life_banner_top ul li {
+      font-size: 14px;
+      margin-right: 10px; }
+
+.life_banner .life_banner_middle, .life_banner .life_banner_bottom {
+  margin-top: 20px;
+  display: flex; }
+  .life_banner .life_banner_middle .img_left, .life_banner .life_banner_bottom .img_left {
+    width: 236px;
+    height: 298px; }
+    .life_banner .life_banner_middle .img_left img, .life_banner .life_banner_bottom .img_left img {
+      width: 100%;
+      height: 100%; }
+  .life_banner .life_banner_middle .life_right, .life_banner .life_banner_bottom .life_right {
+    display: flex;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    justify-content: space-between;
+    width: 960px;
+    box-sizing: border-box;
+    margin-left: 12px;
+    text-align: center; }
+    .life_banner .life_banner_middle .life_right div, .life_banner .life_banner_bottom .life_right div {
+      width: 24%;
+      background: #FFFFFF; }
+      .life_banner .life_banner_middle .life_right div img, .life_banner .life_banner_bottom .life_right div img {
+        width: 160px;
+        height: 160px;
+        margin-bottom: 12px;
+        line-height: 20px;
+        position: relative; }
+      .life_banner .life_banner_middle .life_right div img, .life_banner .life_banner_bottom .life_right div img {
+        width: 160px;
+        height: 160px;
+        margin-top: 20px; }
+      .life_banner .life_banner_middle .life_right div h3, .life_banner .life_banner_bottom .life_right div h3 {
+        font-size: 14px;
+        color: #000000;
+        font-weight: bolder;
+        margin-top: 10px; }
+      .life_banner .life_banner_middle .life_right div p, .life_banner .life_banner_bottom .life_right div p {
+        color: #999; }
+      .life_banner .life_banner_middle .life_right div .price1, .life_banner .life_banner_bottom .life_right div .price1 {
+        color: red;
+        font-size: 14px;
+        margin-top: 10px; }
+      .life_banner .life_banner_middle .life_right div .buyNow, .life_banner .life_banner_bottom .life_right div .buyNow {
+        width: 100px;
+        height: 30px;
+        background: red;
+        color: white;
+        line-height: 30px;
+        position: absolute;
+        left: 65px;
+        bottom: -60px;
+        display: none; }
+
+#zhengping {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-size: 16px;
+  color: #999;
+  position: relative; }
+  #zhengping i {
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    border: 1px solid #999;
+    border-radius: 18px;
+    background: url(../img/logo1x.jpg) no-repeat;
+    vertical-align: middle;
+    margin-right: 20px; }
+  #zhengping .one {
+    background-position: 0 -145px; }
+  #zhengping .two {
+    background-position: -184px -99px; }
+  #zhengping .three {
+    background-position: -138px -145px; }
+  #zhengping .four {
+    background-position: -92px -99px; }
+
+#footer {
+  height: 270px;
+  background-color: #000;
+  position: relative; }
+  #footer .footer_banner_top {
+    display: flex; }
+    #footer .footer_banner_top ul {
+      margin-top: 30px; }
+      #footer .footer_banner_top ul li {
+        margin: 0 70px;
+        line-height: 25px; }
+      #footer .footer_banner_top ul .help {
+        font-size: 14px; }
+    #footer .footer_banner_top div {
+      position: absolute;
+      right: 100px;
+      top: 20px; }
+      #footer .footer_banner_top div h3 {
+        font-size: 16px;
+        color: red; }
+      #footer .footer_banner_top div a {
+        display: block;
+        width: 160px;
+        height: 30px;
+        background: #007AFF;
+        text-align: center;
+        line-height: 30px;
+        color: white;
+        margin-left: -30px;
+        margin-top: 20px; }
+      #footer .footer_banner_top div p {
+        color: white;
+        margin-top: 10px; }
+      #footer .footer_banner_top div .home {
+        color: #999; }
+  #footer .footer_banner_bottom {
+    border-top: 2px solid #333;
+    margin-top: 80px;
+    color: #999;
+    text-align: center; }
+    #footer .footer_banner_bottom p {
+      margin-top: 8px; }
